@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Krishi Global Industries — Agricultural Trade &amp; Storage, Dholka</title>
+<title>Krishi Global Industries — Exporting the Essence of India to the World</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -16,12 +16,10 @@
 html{scroll-behavior:smooth;}
 body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text-dark);overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9998;opacity:.4;}
-
-/* ══ NAVBAR ══ */
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 64px;height:76px;display:flex;align-items:center;justify-content:space-between;transition:background .45s,box-shadow .45s;}
-.nav.scrolled{background:rgba(12,27,18,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(201,168,76,.16);}
+.nav.scrolled{background:rgba(12,27,18,.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(201,168,76,.16);}
 .nav-logo{display:flex;align-items:center;gap:13px;text-decoration:none;}
-.nl-icon{width:38px;height:38px;}
+.nl-icon{width:42px;height:42px;object-fit:contain;filter:brightness(0) invert(1);}
 .nl-text{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;color:#fff;line-height:1;letter-spacing:.2px;}
 .nl-text em{font-style:italic;color:var(--gold);}
 .nav-links{display:flex;align-items:center;gap:38px;list-style:none;}
@@ -40,25 +38,17 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .mob-menu a:hover{color:var(--gold-light);}
 .mob-close{position:absolute;top:28px;right:28px;width:42px;height:42px;cursor:pointer;display:flex;align-items:center;justify-content:center;border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:18px;transition:all .3s;}
 .mob-close:hover{background:var(--gold);color:var(--green-deep);}
-
-/* ══ HERO ══ */
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:120px 24px 80px;}
-
-/* Slideshow */
 .hero-slides{position:absolute;inset:0;}
 .hslide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.8s cubic-bezier(.4,0,.2,1);}
 .hslide.active{opacity:1;animation:kBurns 9s ease-out both;}
 .hslide.leaving{opacity:0;}
 @keyframes kBurns{from{transform:scale(1.07);}to{transform:scale(1.0);}}
-
-/* Dark overlay keeps decorative elements visible */
 .hero-ov1{position:absolute;inset:0;background:rgba(8,22,14,.72);z-index:1;}
 .hero-ov2{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,22,14,.5) 0%,rgba(8,22,14,.2) 40%,rgba(8,22,14,.65) 100%);z-index:1;}
-
-/* Decorative layer */
 .hero-deco{position:absolute;inset:0;z-index:2;pointer-events:none;}
 .hero-grid-lines{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(201,168,76,.055) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(201,168,76,.055) 60px);}
-.hero-glow{position:absolute;width:900px;height:900px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(201,168,76,.06) 0%,transparent 62%);pointer-events:none;}
+.hero-glow{position:absolute;width:900px;height:900px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(201,168,76,.06) 0%,transparent 62%);}
 .hero-circle{position:absolute;border-radius:50%;top:50%;left:50%;}
 .hc1{width:500px;height:500px;border:1px solid rgba(201,168,76,.08);transform:translate(-50%,-50%);animation:rot 38s linear infinite;}
 .hc2{width:760px;height:760px;border:1px solid rgba(201,168,76,.06);transform:translate(-50%,-50%);animation:rot 54s linear infinite reverse;}
@@ -70,12 +60,10 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .hcr-tr{top:24px;right:24px;border-top:1px solid rgba(201,168,76,.6);border-right:1px solid rgba(201,168,76,.6);}
 .hcr-bl{bottom:24px;left:24px;border-bottom:1px solid rgba(201,168,76,.6);border-left:1px solid rgba(201,168,76,.6);}
 .hcr-br{bottom:24px;right:24px;border-bottom:1px solid rgba(201,168,76,.6);border-right:1px solid rgba(201,168,76,.6);}
-
-/* Hero content */
 .hero-inner{position:relative;z-index:3;text-align:center;max-width:840px;}
 .badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(201,168,76,.42);padding:8px 24px;font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold-light);margin-bottom:30px;background:rgba(0,0,0,.18);backdrop-filter:blur(6px);animation:fadeDown .9s ease both;}
 .badge-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;}
-.hero-emblem{width:74px;height:74px;margin:0 auto 24px;display:block;filter:drop-shadow(0 0 24px rgba(201,168,76,.3));animation:fadeDown .9s .1s ease both;}
+.hero-emblem{width:88px;height:88px;margin:0 auto 24px;display:block;filter:drop-shadow(0 0 24px rgba(201,168,76,.3)) brightness(0) invert(1);animation:fadeDown .9s .1s ease both;}
 .hero h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(48px,8.5vw,96px);line-height:.92;color:#fff;letter-spacing:-1.5px;margin-bottom:18px;text-shadow:0 2px 40px rgba(0,0,0,.4);animation:fadeDown .9s .2s ease both;}
 .hero h1 em{font-style:italic;color:var(--gold-light);display:block;}
 .hero-sub{font-size:11px;letter-spacing:4.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:28px;animation:fadeDown .9s .3s ease both;}
@@ -86,63 +74,46 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 14px 44px rgba(201,168,76,.32);}
 .btn-outline{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.75);font-size:11.5px;letter-spacing:2px;text-transform:uppercase;padding:16px 38px;text-decoration:none;transition:all .3s;backdrop-filter:blur(4px);}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold-light);}
-
-/* Slide progress bar */
 .hero-progress{position:absolute;bottom:0;left:0;right:0;height:2px;background:rgba(255,255,255,.08);z-index:4;}
 .hero-progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));width:0;transition:none;}
-
-/* Slide dots + counter */
 .hero-hud{position:absolute;bottom:42px;left:0;right:0;z-index:4;display:flex;align-items:center;justify-content:center;gap:40px;}
 .hdots{display:flex;gap:8px;align-items:center;}
 .hdot{width:18px;height:1px;background:rgba(255,255,255,.25);cursor:pointer;transition:all .35s;}
 .hdot.on{width:36px;background:var(--gold);}
 .hcounter{font-family:'Cormorant Garamond',serif;font-size:13px;color:rgba(255,255,255,.3);letter-spacing:2px;}
 .hcounter span{color:var(--gold);}
-
 .hero-scroll{position:absolute;bottom:44px;right:52px;z-index:4;display:flex;flex-direction:column;align-items:center;gap:7px;color:rgba(255,255,255,.22);font-size:9px;letter-spacing:3px;text-transform:uppercase;animation:fadeIn 1.4s 1.4s ease both;}
 .sdot{width:1px;height:34px;background:linear-gradient(to bottom,var(--gold),transparent);animation:sPulse 2s infinite;}
-
-/* ══ STATS BAR ══ */
 .stats-bar{background:var(--gold);padding:0 24px;}
 .stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid rgba(26,58,42,.14);}
 .stat-item{padding:32px 36px;border-right:1px solid rgba(26,58,42,.14);text-align:center;cursor:default;transition:background .3s;}
 .stat-item:hover{background:rgba(26,58,42,.09);}
 .snum{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:700;color:var(--green-deep);line-height:1;}
 .slbl{font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(26,58,42,.58);margin-top:5px;}
-
-/* ══ MARQUEE ══ */
 .marquee{background:var(--green-mid);padding:16px 0;overflow:hidden;}
 .mtrack{display:flex;white-space:nowrap;animation:marq 24s linear infinite;}
 .mitem{display:inline-flex;align-items:center;gap:28px;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.48);padding:0 28px;flex-shrink:0;}
 .mdot{width:4px;height:4px;background:var(--gold);border-radius:50%;}
 @keyframes marq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-
-/* ══ BASE ══ */
 section{padding:104px 24px;}
 .container{max-width:1100px;margin:0 auto;}
 .eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:12px;}
 .eyebrow::after{content:'';flex:1;max-width:38px;height:1px;background:var(--gold);}
 .sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.8vw,52px);font-weight:600;line-height:1.06;color:var(--green-deep);margin-bottom:18px;}
 .sec-title em{font-style:italic;color:var(--green-light);}
-
-/* ══ ABOUT ══ */
 .about{background:var(--cream);}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
 .about-text p{font-size:15.5px;line-height:1.9;color:var(--text-mid);margin-bottom:22px;font-weight:300;}
 .about-text p strong{font-weight:500;color:var(--green-deep);}
 .about-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;}
 .atag{font-size:10px;letter-spacing:2px;text-transform:uppercase;border:1px solid rgba(201,168,76,.35);color:var(--gold);padding:7px 16px;}
-
-/* About image panel */
 .about-img-wrap{position:relative;}
 .about-img{width:100%;height:480px;object-fit:cover;display:block;filter:brightness(.92);}
 .about-img-border{position:absolute;top:18px;left:18px;right:-18px;bottom:-18px;border:1px solid rgba(201,168,76,.35);pointer-events:none;z-index:0;}
 .about-img-badge{position:absolute;bottom:28px;left:-28px;background:var(--green-deep);padding:28px 32px;z-index:2;}
 .about-img-badge::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent);}
-.aib-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:4px;}
+.aib-num{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:4px;}
 .aib-lbl{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.45);}
-
-/* ══ IMAGE GALLERY STRIP ══ */
 .gallery-strip{padding:0;background:var(--ink);overflow:hidden;}
 .gstrip{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;height:320px;}
 .gcell{position:relative;overflow:hidden;cursor:pointer;}
@@ -154,12 +125,28 @@ section{padding:104px 24px;}
 .gcell:hover .gcaption{opacity:1;transform:translateY(0);}
 .gcaption-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:4px;}
 .gcaption-sub{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);}
-
-/* ══ WHY US ══ */
-.whyus{background:var(--cream-dark);}
+.products{background:var(--cream-dark);}
+.prod-header{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px;}
+.prod-header-text p{font-size:15px;line-height:1.85;color:var(--text-mid);font-weight:300;margin-top:16px;}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.prod-card{background:#fff;border:1px solid rgba(201,168,76,.14);overflow:hidden;position:relative;transition:transform .35s,box-shadow .35s;}
+.prod-card:hover{transform:translateY(-8px);box-shadow:0 28px 72px rgba(0,0,0,.1);}
+.prod-card-img{height:240px;overflow:hidden;position:relative;}
+.prod-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.prod-card:hover .prod-card-img img{transform:scale(1.06);}
+.prod-card-img-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,58,42,.6) 0%,transparent 55%);}
+.prod-card-body{padding:32px 30px 36px;}
+.prod-num{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block;}
+.prod-name{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--green-deep);margin-bottom:12px;line-height:1.1;}
+.prod-desc{font-size:13.5px;line-height:1.82;color:var(--text-mid);font-weight:300;margin-bottom:22px;}
+.prod-features{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.prod-features li{font-size:12px;color:var(--text-mid);display:flex;align-items:center;gap:9px;}
+.prod-features li::before{content:'';width:5px;height:1px;background:var(--gold);flex-shrink:0;}
+.prod-corner{position:absolute;top:0;right:0;width:0;height:0;border-style:solid;border-width:0 48px 48px 0;border-color:transparent var(--gold-pale) transparent transparent;}
+.whyus{background:var(--cream);}
 .why-header{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px;}
 .why-header-text p{font-size:15px;line-height:1.85;color:var(--text-mid);font-weight:300;margin-top:16px;}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(201,168,76,.14);}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,168,76,.14);}
 .why-item{background:#fff;padding:44px 30px;position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s;}
 .why-item:hover{transform:translateY(-7px);box-shadow:0 24px 64px rgba(0,0,0,.1);}
 .why-item::before{content:'';position:absolute;bottom:0;left:0;right:0;height:0;background:var(--green-deep);transition:height .45s cubic-bezier(.4,0,.2,1);z-index:0;}
@@ -172,8 +159,7 @@ section{padding:104px 24px;}
 .why-item:hover .wtitle{color:#fff;}
 .wtext{font-size:13px;line-height:1.82;color:var(--text-mid);font-weight:300;position:relative;z-index:1;transition:color .35s;}
 .why-item:hover .wtext{color:rgba(255,255,255,.52);}
-
-/* ══ SERVICES ══ */
+.why-grid-row2{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,168,76,.14);margin-top:1px;}
 .services{background:var(--green-deep);padding:104px 24px;}
 .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,168,76,.1);}
 .scard{position:relative;overflow:hidden;min-height:480px;display:flex;flex-direction:column;justify-content:flex-end;}
@@ -189,8 +175,6 @@ section{padding:104px 24px;}
 .scard:hover .scard-text{max-height:160px;opacity:1;margin-top:4px;}
 .scard-line{width:0;height:1px;background:var(--gold);margin-bottom:20px;transition:width .5s ease;}
 .scard:hover .scard-line{width:40px;}
-
-/* ══ PROCESS ══ */
 .process{background:var(--cream-dark);}
 .proc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;position:relative;}
 .proc-steps::before{content:'';position:absolute;top:31px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,var(--gold),rgba(201,168,76,.18),var(--gold));z-index:0;}
@@ -199,8 +183,6 @@ section{padding:104px 24px;}
 .proc-step:hover .step-num{background:var(--green-deep);color:var(--gold-light);border-color:var(--green-deep);box-shadow:0 8px 28px rgba(26,58,42,.2);}
 .stitle{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--green-deep);margin-bottom:10px;}
 .stext{font-size:13px;line-height:1.78;color:var(--text-mid);font-weight:300;}
-
-/* ══ PROPERTY ══ */
 .property{background:var(--cream);}
 .prop-inner{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start;}
 .prop-details{display:flex;flex-direction:column;gap:18px;}
@@ -220,8 +202,6 @@ section{padding:104px 24px;}
 .map-lbl span{font-size:13px;color:rgba(255,255,255,.55);letter-spacing:.5px;}
 .map-btn{padding:11px 28px;border:1px solid var(--gold);color:var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .3s;background:transparent;}
 .map-btn:hover{background:var(--gold);color:var(--green-deep);}
-
-/* ══ QUOTE BAND ══ */
 .quote-band{position:relative;overflow:hidden;padding:130px 24px;}
 .qbg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1800&q=75') center/cover;filter:brightness(.28) saturate(.5);}
 .qbg-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,58,42,.9) 0%,rgba(10,22,14,.85) 100%);}
@@ -229,8 +209,6 @@ section{padding:104px 24px;}
 .qmark{font-family:'Cormorant Garamond',serif;font-size:130px;color:rgba(201,168,76,.14);line-height:.4;display:block;margin-bottom:24px;}
 .qtext{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3.2vw,40px);font-weight:300;font-style:italic;color:rgba(255,255,255,.78);line-height:1.55;margin-bottom:32px;}
 .qattr{font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);}
-
-/* ══ LEGAL ══ */
 .legal{background:var(--cream-dark);}
 .legal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
 .leg-item{padding:38px;border:1px solid rgba(201,168,76,.18);position:relative;background:#fff;transition:border-color .3s,transform .35s,box-shadow .35s;}
@@ -238,8 +216,6 @@ section{padding:104px 24px;}
 .leg-corner{position:absolute;top:-1px;right:-1px;width:26px;height:26px;background:var(--gold-pale);clip-path:polygon(100% 0,100% 100%,0 0);}
 .leg-lbl{font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
 .leg-val{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--green-deep);letter-spacing:.8px;}
-
-/* ══ CONTACT ══ */
 .contact{background:var(--cream);}
 .contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start;}
 .cl p{font-size:15px;line-height:1.88;color:var(--text-mid);font-weight:300;margin-bottom:40px;}
@@ -262,10 +238,9 @@ section{padding:104px 24px;}
 .fg2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .fsub{width:100%;padding:15px;background:var(--gold);color:var(--green-deep);font-family:'Jost',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s;}
 .fsub:hover{background:var(--gold-light);}
-
-/* ══ FOOTER ══ */
 footer{background:var(--ink);padding:56px 24px 28px;}
 .finr{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px;padding-bottom:44px;border-bottom:1px solid rgba(201,168,76,.1);margin-bottom:28px;}
+.flogo{width:54px;height:54px;object-fit:contain;filter:brightness(0) invert(1);opacity:.8;}
 .fbn{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:#fff;margin-bottom:12px;margin-top:10px;}
 .fbn em{font-style:italic;color:var(--gold);}
 .fbt{font-size:13px;line-height:1.78;color:rgba(255,255,255,.28);font-weight:300;}
@@ -277,8 +252,6 @@ footer{background:var(--ink);padding:56px 24px 28px;}
 .fbl{font-size:11px;letter-spacing:1.5px;color:rgba(255,255,255,.18);}
 .fbl span{color:var(--gold);}
 .fbr{font-size:10.5px;letter-spacing:1px;color:rgba(255,255,255,.16);}
-
-/* ══ ANIMATIONS ══ */
 @keyframes fadeDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 @keyframes scX{from{transform:scaleX(0);}to{transform:scaleX(1);}}
@@ -287,24 +260,22 @@ footer{background:var(--ink);padding:56px 24px 28px;}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .72s ease,transform .72s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 .rd1{transition-delay:.1s;}.rd2{transition-delay:.2s;}.rd3{transition-delay:.3s;}.rd4{transition-delay:.4s;}
-
-/* ══ RESPONSIVE ══ */
 @media(max-width:960px){
   .nav{padding:0 24px;}.nav-links{display:none;}.hamburger{display:flex;}
   .stats-inner{grid-template-columns:repeat(2,1fr);}
   .about-grid,.prop-inner,.contact-wrap{grid-template-columns:1fr;}
   .about-img-badge{left:0;bottom:0;}
-  .why-grid,.cards-grid{grid-template-columns:1fr 1fr;}
+  .why-grid,.why-grid-row2,.cards-grid,.prod-grid{grid-template-columns:1fr 1fr;}
   .gstrip{grid-template-columns:1fr 1fr;height:auto;}
   .gcell{height:200px;}
   .proc-steps{grid-template-columns:repeat(2,1fr);gap:44px;}.proc-steps::before{display:none;}
   .finr{grid-template-columns:1fr;gap:36px;}
   .fg2{grid-template-columns:1fr;}
   .legal-grid{grid-template-columns:1fr;}
-  .why-header{grid-template-columns:1fr;}
+  .why-header,.prod-header{grid-template-columns:1fr;}
 }
 @media(max-width:580px){
-  .why-grid,.cards-grid{grid-template-columns:1fr;}
+  .why-grid,.why-grid-row2,.cards-grid,.prod-grid{grid-template-columns:1fr;}
   .hero-hud{gap:20px;bottom:36px;}
   .hero-scroll{display:none;}
   .hero-corner{width:36px;height:56px;}
@@ -313,110 +284,69 @@ footer{background:var(--ink);padding:56px 24px 28px;}
 </style>
 </head>
 <body>
-
-<!-- ══ NAVBAR ══ -->
 <nav class="nav" id="nav">
   <a href="#hero" class="nav-logo">
-    <svg class="nl-icon" viewBox="0 0 38 38" fill="none">
-      <circle cx="19" cy="19" r="18" stroke="#C9A84C" stroke-width=".8"/>
-      <path d="M19 29L19 10" stroke="#C9A84C" stroke-width="1.1"/>
-      <path d="M19 22Q14.5 18 16 12Q19 17 19 22Z" fill="#C9A84C" opacity=".9"/>
-      <path d="M19 22Q23.5 18 22 12Q19 17 19 22Z" fill="#C9A84C" opacity=".9"/>
-      <path d="M19 17Q14 13.5 15.5 8Q19 13 19 17Z" fill="#C9A84C" opacity=".5"/>
-      <path d="M19 17Q24 13.5 22.5 8Q19 13 19 17Z" fill="#C9A84C" opacity=".5"/>
-    </svg>
+    <img class="nl-icon" src="Logo.png" alt="Krishi Global"/>
     <div class="nl-text">Krishi <em>Global</em></div>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#property">Premises</a></li>
     <li><a href="#legal">Compliance</a></li>
-    <li><a href="#contact" class="nav-cta-btn">Contact Us</a></li>
+    <li><a href="#contact" class="nav-cta-btn">Get a Quote</a></li>
   </ul>
   <div class="hamburger" onclick="openMenu()"><span></span><span></span><span></span></div>
 </nav>
-
 <div class="mob-menu" id="mobMenu">
-  <div class="mob-close" onclick="closeMenu()">✕</div>
+  <div class="mob-close" onclick="closeMenu()">&#10005;</div>
   <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#products" onclick="closeMenu()">Products</a>
   <a href="#services" onclick="closeMenu()">Services</a>
   <a href="#property" onclick="closeMenu()">Premises</a>
   <a href="#legal" onclick="closeMenu()">Compliance</a>
-  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#contact" onclick="closeMenu()">Get a Quote</a>
 </div>
-
-<!-- ══ HERO ══ -->
 <section class="hero" id="hero">
-
-  <!-- Background slides -->
   <div class="hero-slides">
     <div class="hslide active" style="background-image:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1800&q=80')"></div>
     <div class="hslide" style="background-image:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1800&q=80')"></div>
+    <div class="hslide" style="background-image:url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=1800&q=80')"></div>
     <div class="hslide" style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1800&q=80')"></div>
-    <div class="hslide" style="background-image:url('https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=1800&q=80')"></div>
-    <div class="hslide" style="background-image:url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1800&q=80')"></div>
+    <div class="hslide" style="background-image:url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1800&q=80')"></div>
   </div>
-
-  <!-- Overlays -->
-  <div class="hero-ov1"></div>
-  <div class="hero-ov2"></div>
-
-  <!-- Decorative layer -->
+  <div class="hero-ov1"></div><div class="hero-ov2"></div>
   <div class="hero-deco">
-    <div class="hero-grid-lines"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-circle hc1"></div>
-    <div class="hero-circle hc2"></div>
-    <div class="hero-circle hc3"></div>
+    <div class="hero-grid-lines"></div><div class="hero-glow"></div>
+    <div class="hero-circle hc1"></div><div class="hero-circle hc2"></div><div class="hero-circle hc3"></div>
     <div class="hero-top-line"></div>
-    <div class="hero-corner hcr-tl"></div>
-    <div class="hero-corner hcr-tr"></div>
-    <div class="hero-corner hcr-bl"></div>
-    <div class="hero-corner hcr-br"></div>
+    <div class="hero-corner hcr-tl"></div><div class="hero-corner hcr-tr"></div>
+    <div class="hero-corner hcr-bl"></div><div class="hero-corner hcr-br"></div>
   </div>
-
-  <!-- Content -->
   <div class="hero-inner">
-    <div class="badge"><div class="badge-dot"></div>Established · Gujarat, India<div class="badge-dot"></div></div>
-
-    <svg class="hero-emblem" viewBox="0 0 74 74" fill="none">
-      <circle cx="37" cy="37" r="36" stroke="#C9A84C" stroke-width="1"/>
-      <path d="M37 57L37 18" stroke="#C9A84C" stroke-width="1.3"/>
-      <path d="M37 42Q28 35 30.5 24Q37 33 37 42Z" fill="#C9A84C" opacity=".92"/>
-      <path d="M37 42Q46 35 43.5 24Q37 33 37 42Z" fill="#C9A84C" opacity=".92"/>
-      <path d="M37 33Q27 26 29.5 15Q37 24 37 33Z" fill="#C9A84C" opacity=".5"/>
-      <path d="M37 33Q47 26 44.5 15Q37 24 37 33Z" fill="#C9A84C" opacity=".5"/>
-      <path d="M26 57Q31 49 37 57Q43 49 48 57" stroke="#C9A84C" stroke-width="1" fill="none"/>
-    </svg>
-
+    <div class="badge"><div class="badge-dot"></div>Gujarat, India &nbsp;&middot;&nbsp; Global Exports<div class="badge-dot"></div></div>
+    <img class="hero-emblem" src="Logo.png" alt="Krishi Global"/>
     <h1>Krishi <em>Global Industries</em></h1>
-    <div class="hero-sub">Agricultural Trade &amp; Storage Solutions · Gujarat, India</div>
+    <div class="hero-sub">Exporting the Essence of India to the World</div>
     <div class="hero-rule"></div>
-    <p class="hero-tagline">Where Gujarat's agricultural heritage meets global commerce — trusted custodians of quality trade, storage, and market access at Dholka's premier APMC.</p>
+    <p class="hero-tagline">Premium quality coriander seeds, dried chillies, and rice &mdash; sourced directly from Indian farms and delivered globally with trust.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Begin an Enquiry <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      <a href="#about" class="btn-outline">Discover More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#contact" class="btn-primary">Get a Quote <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#products" class="btn-outline">Explore Products <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
-
-  <!-- HUD: dots + counter -->
   <div class="hero-hud">
     <div class="hdots">
-      <div class="hdot on" onclick="goSlide(0)"></div>
-      <div class="hdot" onclick="goSlide(1)"></div>
-      <div class="hdot" onclick="goSlide(2)"></div>
-      <div class="hdot" onclick="goSlide(3)"></div>
+      <div class="hdot on" onclick="goSlide(0)"></div><div class="hdot" onclick="goSlide(1)"></div>
+      <div class="hdot" onclick="goSlide(2)"></div><div class="hdot" onclick="goSlide(3)"></div>
       <div class="hdot" onclick="goSlide(4)"></div>
     </div>
     <div class="hcounter"><span id="hcur">01</span> / 05</div>
   </div>
-
   <div class="hero-scroll"><div class="sdot"></div>Scroll</div>
   <div class="hero-progress"><div class="hero-progress-fill" id="hpf"></div></div>
 </section>
-
-<!-- ══ STATS BAR ══ -->
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item reveal"><div class="snum">No. 8</div><div class="slbl">Godown Number</div></div>
@@ -425,210 +355,108 @@ footer{background:var(--ink);padding:56px 24px 28px;}
     <div class="stat-item reveal rd3"><div class="snum">GJ</div><div class="slbl">Gujarat Operations</div></div>
   </div>
 </div>
-
-<!-- ══ MARQUEE ══ -->
 <div class="marquee">
   <div class="mtrack">
-    <div class="mitem"><span class="mdot"></span>Agricultural Trade</div>
-    <div class="mitem"><span class="mdot"></span>Cotton Market</div>
-    <div class="mitem"><span class="mdot"></span>APMC Registered</div>
-    <div class="mitem"><span class="mdot"></span>Dholka Gujarat</div>
-    <div class="mitem"><span class="mdot"></span>Godown Storage</div>
-    <div class="mitem"><span class="mdot"></span>Commodity Supply Chain</div>
-    <div class="mitem"><span class="mdot"></span>Global Commerce</div>
-    <div class="mitem"><span class="mdot"></span>Krishi Global Industries</div>
-    <!-- duplicate -->
-    <div class="mitem"><span class="mdot"></span>Agricultural Trade</div>
-    <div class="mitem"><span class="mdot"></span>Cotton Market</div>
-    <div class="mitem"><span class="mdot"></span>APMC Registered</div>
-    <div class="mitem"><span class="mdot"></span>Dholka Gujarat</div>
-    <div class="mitem"><span class="mdot"></span>Godown Storage</div>
-    <div class="mitem"><span class="mdot"></span>Commodity Supply Chain</div>
-    <div class="mitem"><span class="mdot"></span>Global Commerce</div>
-    <div class="mitem"><span class="mdot"></span>Krishi Global Industries</div>
+    <div class="mitem"><span class="mdot"></span>Coriander Seeds</div><div class="mitem"><span class="mdot"></span>Dried Red Chilli</div>
+    <div class="mitem"><span class="mdot"></span>Premium Rice</div><div class="mitem"><span class="mdot"></span>Direct Farm Sourcing</div>
+    <div class="mitem"><span class="mdot"></span>Export Quality Assured</div><div class="mitem"><span class="mdot"></span>Global Delivery</div>
+    <div class="mitem"><span class="mdot"></span>APMC Registered</div><div class="mitem"><span class="mdot"></span>Krishi Global Industries</div>
+    <div class="mitem"><span class="mdot"></span>Coriander Seeds</div><div class="mitem"><span class="mdot"></span>Dried Red Chilli</div>
+    <div class="mitem"><span class="mdot"></span>Premium Rice</div><div class="mitem"><span class="mdot"></span>Direct Farm Sourcing</div>
+    <div class="mitem"><span class="mdot"></span>Export Quality Assured</div><div class="mitem"><span class="mdot"></span>Global Delivery</div>
+    <div class="mitem"><span class="mdot"></span>APMC Registered</div><div class="mitem"><span class="mdot"></span>Krishi Global Industries</div>
   </div>
 </div>
-
-<!-- ══ ABOUT ══ -->
 <section class="about" id="about">
   <div class="container">
     <div class="about-grid">
-      <div class="reveal">
+      <div class="about-text reveal">
         <div class="eyebrow">Who We Are</div>
         <h2 class="sec-title">Rooted in the Soil,<br><em>Built for the Market</em></h2>
-        <p>Krishi Global Industries is a Gujarat-based agricultural trade and storage enterprise with a singular focus: delivering reliable, transparent, and quality-assured commodity services from the heart of Dholka's APMC New Cotton Market.</p>
-        <p>We operate <strong>Godown No. 8</strong> — a strategically positioned storage facility at one of Gujarat's most active regulated markets. From procurement and warehousing to direct market operations near Ambika Circle, every function is built on precision, compliance, and a deep respect for the agricultural value chain.</p>
-        <p>Our GST-registered, APMC-compliant business bridges the gap between Gujarat's farmers and the larger domestic and international commodity trade ecosystem — with a commitment to honesty, accountability, and long-term partnerships.</p>
+        <p>Krishi Global Industries is a trusted exporter of high-quality agricultural products from India. With strong sourcing networks across major farming regions, we ensure that every product meets international standards of quality, purity, and consistency.</p>
+        <p>We specialise in exporting <strong>coriander seeds, dried chillies, and rice</strong> to clients across the globe. Our commitment lies in delivering fresh, naturally processed, and carefully packaged goods that preserve authentic Indian flavour.</p>
+        <p>With a customer-first approach and reliable logistics, we aim to build long-term partnerships worldwide &mdash; bridging India's agricultural heritage with global demand.</p>
         <div class="about-tags">
-          <div class="atag">APMC Certified</div>
-          <div class="atag">GST Registered</div>
-          <div class="atag">Cotton Trade</div>
-          <div class="atag">Grain Storage</div>
+          <div class="atag">APMC Certified</div><div class="atag">GST Registered</div>
+          <div class="atag">Export Ready</div><div class="atag">Quality Assured</div>
           <div class="atag">Dholka, Gujarat</div>
         </div>
       </div>
       <div class="reveal rd2">
         <div class="about-img-wrap">
           <div class="about-img-border"></div>
-          <img class="about-img" src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=900&q=80" alt="Agricultural fields Gujarat" loading="lazy"/>
-          <div class="about-img-badge">
-            <div class="aib-num">APMC</div>
-            <div class="aib-lbl">Market Certified</div>
-          </div>
+          <img class="about-img" src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=900&q=80" alt="Indian spice fields" loading="lazy"/>
+          <div class="about-img-badge"><div class="aib-num">100%</div><div class="aib-lbl">Farm Direct</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ══ IMAGE GALLERY STRIP ══ -->
 <div class="gallery-strip">
   <div class="gstrip">
-    <div class="gcell reveal">
-      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=700&q=80" alt="Paddy fields Gujarat" loading="lazy"/>
-      <div class="goverlay"></div>
-      <div class="gcaption"><div class="gcaption-title">Golden Harvest</div><div class="gcaption-sub">Gujarat Paddy Fields</div></div>
-    </div>
-    <div class="gcell reveal rd1">
-      <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=700&q=80" alt="Cotton fields" loading="lazy"/>
-      <div class="goverlay"></div>
-      <div class="gcaption"><div class="gcaption-title">Cotton Country</div><div class="gcaption-sub">APMC Cotton Market</div></div>
-    </div>
-    <div class="gcell reveal rd2">
-      <img src="https://images.unsplash.com/photo-1620200423727-8127f75d7f53?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Commodity market" loading="lazy"/>
-      <div class="goverlay"></div>
-      <div class="gcaption"><div class="gcaption-title">Market Access</div><div class="gcaption-sub">Wholesale Trade Operations</div></div>
-    </div>
-    <div class="gcell reveal rd3">
-      <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&q=80" alt="Farm landscape" loading="lazy"/>
-      <div class="goverlay"></div>
-      <div class="gcaption"><div class="gcaption-title">Agricultural Heritage</div><div class="gcaption-sub">Gujarat Farm Landscape</div></div>
-    </div>
+    <div class="gcell reveal"><img src="https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=700&q=80" alt="Coriander seeds" loading="lazy"/><div class="goverlay"></div><div class="gcaption"><div class="gcaption-title">Coriander Seeds</div><div class="gcaption-sub">Premium Farm Sourced</div></div></div>
+    <div class="gcell reveal rd1"><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=700&q=80" alt="Red chilli" loading="lazy"/><div class="goverlay"></div><div class="gcaption"><div class="gcaption-title">Dried Red Chilli</div><div class="gcaption-sub">Sun-Dried &amp; Export Grade</div></div></div>
+    <div class="gcell reveal rd2"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700&q=80" alt="Rice harvest" loading="lazy"/><div class="goverlay"></div><div class="gcaption"><div class="gcaption-title">Premium Rice</div><div class="gcaption-sub">Long Grain &amp; Aromatic</div></div></div>
+    <div class="gcell reveal rd3"><img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&q=80" alt="Farm landscape" loading="lazy"/><div class="goverlay"></div><div class="gcaption"><div class="gcaption-title">Farm to Globe</div><div class="gcaption-sub">Direct Sourcing Network</div></div></div>
   </div>
 </div>
-
-<!-- ══ WHY US ══ -->
-<section class="whyus">
+<section class="products" id="products">
+  <div class="container">
+    <div class="prod-header">
+      <div class="reveal"><div class="eyebrow">What We Export</div><h2 class="sec-title">Our <em>Products</em></h2></div>
+      <div class="reveal rd1"><p class="prod-header-text">Every product we export is sourced directly from trusted Indian farms, cleaned, graded, and packaged to meet international quality standards &mdash; ready for bulk and retail export worldwide.</p></div>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card reveal"><div class="prod-corner"></div><div class="prod-card-img"><img src="https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=800&q=80" alt="Coriander Seeds" loading="lazy"/><div class="prod-card-img-ov"></div></div><div class="prod-card-body"><span class="prod-num">01</span><div class="prod-name">Coriander Seeds</div><p class="prod-desc">Premium-grade coriander seeds sourced from the finest farms in India. Known for their rich aroma and natural flavour, ideal for culinary and industrial use.</p><ul class="prod-features"><li>High purity &amp; uniform size</li><li>Strong natural aroma</li><li>Hygienically cleaned &amp; processed</li><li>Export-quality packaging</li></ul></div></div>
+      <div class="prod-card reveal rd1"><div class="prod-corner"></div><div class="prod-card-img"><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&q=80" alt="Dried Red Chilli" loading="lazy"/><div class="prod-card-img-ov"></div></div><div class="prod-card-body"><span class="prod-num">02</span><div class="prod-name">Dried Red Chilli</div><p class="prod-desc">Carefully selected and sun-dried red chillies that deliver vibrant colour, strong pungency, and authentic taste. Ideal for global markets.</p><ul class="prod-features"><li>Rich colour &amp; high heat level</li><li>Low moisture content</li><li>Available in multiple varieties</li><li>Cleaned and sorted for export</li></ul></div></div>
+      <div class="prod-card reveal rd2"><div class="prod-corner"></div><div class="prod-card-img"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&q=80" alt="Premium Rice" loading="lazy"/><div class="prod-card-img-ov"></div></div><div class="prod-card-body"><span class="prod-num">03</span><div class="prod-name">Rice</div><p class="prod-desc">We offer premium varieties of Indian rice known for their quality, taste, and aroma, suitable for global markets and bulk export.</p><ul class="prod-features"><li>Long grain &amp; rich texture</li><li>Naturally processed</li><li>Consistent quality supply</li><li>Suitable for bulk export</li></ul></div></div>
+    </div>
+  </div>
+</section>
+<section class="whyus" id="whyus">
   <div class="container">
     <div class="why-header">
-      <div class="reveal">
-        <div class="eyebrow">Why Choose Us</div>
-        <h2 class="sec-title">Four Pillars of<br><em>Trusted Commerce</em></h2>
-      </div>
-      <div class="reveal rd1">
-        <p>Every transaction at Krishi Global Industries is grounded in regulatory compliance, logistical precision, and a deep understanding of Gujarat's agricultural market dynamics — qualities that set us apart as a preferred trade and storage partner.</p>
-      </div>
+      <div class="reveal"><div class="eyebrow">Why Choose Us</div><h2 class="sec-title">Why <em>Krishi Global</em></h2></div>
+      <div class="reveal rd1"><p class="why-header-text">From farm to final destination, every step we take is guided by quality, reliability, and a genuine commitment to our partners' success in global markets.</p></div>
     </div>
     <div class="why-grid">
-      <div class="why-item reveal">
-        <div class="wnum">01</div>
-        <div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><path d="M11 2L3 6v5c0 4.4 3.4 8.5 8 9.5 4.6-1 8-5.1 8-9.5V6L11 2Z"/></svg></div>
-        <div class="wtitle">APMC Certified</div>
-        <p class="wtext">Fully registered under Gujarat's APMC regulatory framework. Every trade and storage operation adheres to mandated compliance standards — giving partners full legal confidence.</p>
-      </div>
-      <div class="why-item reveal rd1">
-        <div class="wnum">02</div>
-        <div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><circle cx="11" cy="11" r="9"/><path d="M11 7v4l3 3"/></svg></div>
-        <div class="wtitle">Prime Market Location</div>
-        <p class="wtext">Godown No. 8 at APMC New Cotton Market sits at the epicentre of Dholka's agricultural commerce — ensuring frictionless access to buyers, sellers, and logistics networks.</p>
-      </div>
-      <div class="why-item reveal rd2">
-        <div class="wnum">03</div>
-        <div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><rect x="2" y="7" width="18" height="13" rx="1"/><path d="M7 7V5a4 4 0 018 0v2"/></svg></div>
-        <div class="wtitle">Secure Godown Infrastructure</div>
-        <p class="wtext">Purpose-built for agricultural commodity storage, our facility ensures safe, properly managed warehousing — designed to preserve commodity quality through every season.</p>
-      </div>
-      <div class="why-item reveal rd3">
-        <div class="wnum">04</div>
-        <div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><path d="M4 16l4-7 4 5 3-3 3 5"/><circle cx="11" cy="5" r="2"/></svg></div>
-        <div class="wtitle">GST &amp; PAN Compliant</div>
-        <p class="wtext">Fully GST registered with a valid GSTIN (24DKJPS3119C1ZC) and PAN (DKJPS3119C) — guaranteeing transparent, invoice-backed, accountable trade for every partner.</p>
-      </div>
+      <div class="why-item reveal"><div class="wnum">01</div><div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><path d="M3 18L3 8l8-6 8 6v10"/><path d="M8 18v-6h6v6"/></svg></div><div class="wtitle">Direct Farm Sourcing</div><p class="wtext">We source directly from trusted Indian farmers &mdash; cutting out middlemen to ensure fresher produce, fair pricing, and a traceable supply chain.</p></div>
+      <div class="why-item reveal rd1"><div class="wnum">02</div><div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><path d="M11 2L3 6v5c0 4.4 3.4 8.5 8 9.5 4.6-1 8-5.1 8-9.5V6L11 2Z"/><path d="M7 11l3 3 5-5"/></svg></div><div class="wtitle">Strict Quality Control</div><p class="wtext">Multi-level inspection and grading at every stage ensures only export-standard product leaves our facility &mdash; cleaned, sorted, and tested.</p></div>
+      <div class="why-item reveal rd2"><div class="wnum">03</div><div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><circle cx="11" cy="11" r="9"/><path d="M7 11l3 3 5-5"/></svg></div><div class="wtitle">Competitive Pricing</div><p class="wtext">Direct sourcing and efficient operations allow us to offer highly competitive pricing without compromising on quality &mdash; maximising value for every buyer.</p></div>
+    </div>
+    <div class="why-grid-row2">
+      <div class="why-item reveal"><div class="wnum">04</div><div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><circle cx="11" cy="11" r="9"/><path d="M11 7v4l3 3"/></svg></div><div class="wtitle">Timely Global Delivery</div><p class="wtext">Reliable logistics partnerships and proactive shipment tracking ensure your orders arrive on schedule &mdash; wherever in the world your business operates.</p></div>
+      <div class="why-item reveal rd1"><div class="wnum">05</div><div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><rect x="3" y="6" width="16" height="13" rx="1"/><path d="M3 10h16"/><path d="M8 6V4a3 3 0 016 0v2"/></svg></div><div class="wtitle">Custom Packaging</div><p class="wtext">Flexible packaging solutions &mdash; from bulk bags to branded retail packs &mdash; tailored to each market's requirements, ensuring freshness and shelf appeal.</p></div>
+      <div class="why-item reveal rd2"><div class="wnum">06</div><div class="wicon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#C9A84C" stroke-width="1.3"><circle cx="11" cy="11" r="9"/><path d="M6 11l5-5 5 5"/></svg></div><div class="wtitle">Trusted Export Partner</div><p class="wtext">GST-registered, APMC-compliant, and committed to transparent documentation &mdash; a reliable long-term partner for every shipment.</p></div>
     </div>
   </div>
 </section>
-
-<!-- ══ SERVICES ══ -->
 <section class="services" id="services">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:64px;" class="reveal">
-      <div class="eyebrow" style="justify-content:center;"><span style="flex:none">What We Do</span></div>
-      <h2 class="sec-title" style="color:#fff;">Our <em style="color:var(--gold-light)">Core</em> Services</h2>
-    </div>
-  </div>
+  <div class="container"><div style="text-align:center;margin-bottom:64px;" class="reveal"><div class="eyebrow" style="justify-content:center;"><span style="flex:none">What We Do</span></div><h2 class="sec-title" style="color:#fff;">Our <em style="color:var(--gold-light)">Core</em> Services</h2></div></div>
   <div class="cards-grid">
-    <div class="scard reveal">
-      <div class="scard-bg" style="background-image:url('https://images.unsplash.com/photo-1595855759920-86582396756a?w=800&q=80')"></div>
-      <div class="scard-ov"></div>
-      <div class="scard-content">
-        <span class="scard-num">01</span>
-        <div class="scard-line"></div>
-        <svg class="scard-icon" viewBox="0 0 44 44" fill="none" stroke="#C9A84C" stroke-width="1.2">
-          <rect x="6" y="20" width="32" height="18" rx="1"/><path d="M2 20L22 6 42 20"/>
-          <line x1="16" y1="38" x2="16" y2="26"/><line x1="28" y1="38" x2="28" y2="26"/>
-          <rect x="18" y="26" width="8" height="12"/>
-        </svg>
-        <div class="scard-title">Storage &amp; Godown Operations</div>
-        <p class="scard-text">We offer secure, APMC-registered warehouse infrastructure at Godown No. 8, New Cotton Market. Our facility is engineered for agricultural commodity storage — ensuring proper conditions, safe handling, and reliable access throughout the year. From short-term holding to extended warehousing, we serve traders, farmers, and businesses alike.</p>
-      </div>
-    </div>
-    <div class="scard reveal rd1">
-      <div class="scard-bg" style="background-image:url('https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?w=800&q=80')"></div>
-      <div class="scard-ov"></div>
-      <div class="scard-content">
-        <span class="scard-num">02</span>
-        <div class="scard-line"></div>
-        <svg class="scard-icon" viewBox="0 0 44 44" fill="none" stroke="#C9A84C" stroke-width="1.2">
-          <circle cx="22" cy="22" r="16"/>
-          <path d="M22 6C22 6 14 14 14 22S22 38 22 38 30 30 30 22 22 6 22 6Z"/>
-          <line x1="6" y1="22" x2="38" y2="22"/><line x1="22" y1="6" x2="22" y2="38"/>
-        </svg>
-        <div class="scard-title">Commodity Trade &amp; Procurement</div>
-        <p class="scard-text">From cotton and grains to spices and agri-produce, we facilitate end-to-end commodity procurement and distribution. Our deep-rooted presence within the APMC ecosystem enables transparent, fair pricing — connecting Gujarat's farming communities with reliable domestic and export market channels.</p>
-      </div>
-    </div>
-    <div class="scard reveal rd2">
-      <div class="scard-bg" style="background-image:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80')"></div>
-      <div class="scard-ov"></div>
-      <div class="scard-content">
-        <span class="scard-num">03</span>
-        <div class="scard-line"></div>
-        <svg class="scard-icon" viewBox="0 0 44 44" fill="none" stroke="#C9A84C" stroke-width="1.2">
-          <path d="M8 36L8 16 22 8 36 16 36 36"/>
-          <path d="M14 36L14 26Q14 22 22 22Q30 22 30 26L30 36"/>
-          <circle cx="22" cy="14" r="3"/>
-        </svg>
-        <div class="scard-title">APMC Market Operations</div>
-        <p class="scard-text">As a registered market participant, we actively operate within the APMC framework near Ambika Circle, Dholka. Our market operations include commodity trading, price discovery, buyer-seller facilitation, and logistics coordination — giving all trade partners seamless access to Gujarat's regulated wholesale ecosystem.</p>
-      </div>
-    </div>
+    <div class="scard reveal"><div class="scard-bg" style="background-image:url('https://images.unsplash.com/photo-1595855759920-86582396756a?w=800&q=80')"></div><div class="scard-ov"></div><div class="scard-content"><span class="scard-num">01</span><div class="scard-line"></div><svg class="scard-icon" viewBox="0 0 44 44" fill="none" stroke="#C9A84C" stroke-width="1.2"><rect x="6" y="20" width="32" height="18" rx="1"/><path d="M2 20L22 6 42 20"/><line x1="16" y1="38" x2="16" y2="26"/><line x1="28" y1="38" x2="28" y2="26"/><rect x="18" y="26" width="8" height="12"/></svg><div class="scard-title">Storage &amp; Godown Operations</div><p class="scard-text">Secure APMC-registered warehouse at Godown No. 8 &mdash; purpose-built for agricultural commodity storage with proper conditions and reliable access throughout the year.</p></div></div>
+    <div class="scard reveal rd1"><div class="scard-bg" style="background-image:url('https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?w=800&q=80')"></div><div class="scard-ov"></div><div class="scard-content"><span class="scard-num">02</span><div class="scard-line"></div><svg class="scard-icon" viewBox="0 0 44 44" fill="none" stroke="#C9A84C" stroke-width="1.2"><circle cx="22" cy="22" r="16"/><path d="M22 6C22 6 14 14 14 22S22 38 22 38 30 30 30 22 22 6 22 6Z"/><line x1="6" y1="22" x2="38" y2="22"/><line x1="22" y1="6" x2="22" y2="38"/></svg><div class="scard-title">Commodity Trade &amp; Export</div><p class="scard-text">End-to-end commodity export &mdash; connecting Gujarat's farming communities with reliable international buyers through transparent, fair, and compliant trade channels.</p></div></div>
+    <div class="scard reveal rd2"><div class="scard-bg" style="background-image:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80')"></div><div class="scard-ov"></div><div class="scard-content"><span class="scard-num">03</span><div class="scard-line"></div><svg class="scard-icon" viewBox="0 0 44 44" fill="none" stroke="#C9A84C" stroke-width="1.2"><path d="M8 36L8 16 22 8 36 16 36 36"/><path d="M14 36L14 26Q14 22 22 22Q30 22 30 26L30 36"/><circle cx="22" cy="14" r="3"/></svg><div class="scard-title">APMC Market Operations</div><p class="scard-text">Registered market participant near Ambika Circle, Dholka &mdash; commodity trading, price discovery, buyer-seller facilitation, and logistics coordination.</p></div></div>
   </div>
 </section>
-
-<!-- ══ PROCESS ══ -->
 <section class="process">
   <div class="container">
-    <div class="reveal" style="text-align:center;">
-      <div class="eyebrow" style="justify-content:center;">How It Works</div>
-      <h2 class="sec-title">Our <em>Trade Process</em></h2>
-    </div>
+    <div class="reveal" style="text-align:center;"><div class="eyebrow" style="justify-content:center;">How It Works</div><h2 class="sec-title">Our <em>Export Process</em></h2></div>
     <div class="proc-steps">
-      <div class="proc-step reveal"><div class="step-num">01</div><div class="stitle">Enquiry</div><p class="stext">Share your commodity type, quantity, and requirement — via call or WhatsApp. No lengthy forms, no delays.</p></div>
-      <div class="proc-step reveal rd1"><div class="step-num">02</div><div class="stitle">Assessment</div><p class="stext">We evaluate your specific needs — commodity grade, logistics, storage duration, and trade volumes — to offer the right solution.</p></div>
-      <div class="proc-step reveal rd2"><div class="step-num">03</div><div class="stitle">Documentation</div><p class="stext">GST-compliant invoicing, APMC documentation, and transparent pricing are provided upfront — no hidden terms.</p></div>
-      <div class="proc-step reveal rd3"><div class="step-num">04</div><div class="stitle">Execution</div><p class="stext">Goods are stored, traded, or dispatched through our market operations with full accountability and on-time precision.</p></div>
+      <div class="proc-step reveal"><div class="step-num">01</div><div class="stitle">Sourcing</div><p class="stext">Directly from trusted farms. We maintain relationships with verified farmers across major growing regions to secure the best-quality produce at origin.</p></div>
+      <div class="proc-step reveal rd1"><div class="step-num">02</div><div class="stitle">Quality Check</div><p class="stext">Multi-level inspection at sourcing and processing stages. Every batch is tested for purity, moisture content, and grade before packaging.</p></div>
+      <div class="proc-step reveal rd2"><div class="step-num">03</div><div class="stitle">Processing</div><p class="stext">Cleaning, grading, and packaging to international standards. Goods are prepared in export-ready condition with proper documentation and labelling.</p></div>
+      <div class="proc-step reveal rd3"><div class="step-num">04</div><div class="stitle">Shipping</div><p class="stext">Safe and timely global delivery. We coordinate with reliable freight partners to ensure on-schedule, fully documented shipments worldwide.</p></div>
     </div>
   </div>
 </section>
-
-<!-- ══ PROPERTY ══ -->
 <section class="property" id="property">
   <div class="container">
     <div class="prop-inner">
       <div class="reveal">
         <div class="eyebrow">Our Premises</div>
-        <h2 class="sec-title">Godown <em>No. 8</em><br>— Dholka</h2>
-        <p style="font-size:15px;line-height:1.88;color:var(--text-mid);font-weight:300;margin-bottom:36px;">Situated within the APMC New Cotton Market complex near Ambika Circle, our registered facility is positioned at the geographic and commercial heart of Dholka's agricultural trade ecosystem. Access to major transport corridors makes distribution seamless and efficient.</p>
+        <h2 class="sec-title">Godown <em>No. 8</em><br>&#8212; Dholka</h2>
+        <p style="font-size:15px;line-height:1.88;color:var(--text-mid);font-weight:300;margin-bottom:36px;">Situated within the APMC New Cotton Market complex near Ambika Circle, our registered facility is positioned at the heart of Dholka's agricultural trade ecosystem. Access to major transport corridors makes distribution seamless and efficient.</p>
         <div class="prop-details">
           <div class="drow reveal rd1"><span class="dlbl">Godown Number</span><div class="dval">No. 8</div></div>
           <div class="drow reveal rd1"><span class="dlbl">Market</span><div class="dval">APMC New Cotton Market</div></div>
@@ -638,201 +466,83 @@ footer{background:var(--ink);padding:56px 24px 28px;}
         </div>
       </div>
       <div class="reveal rd2">
-        <div class="map-box">
-          <div class="map-bg"></div>
-          <div class="map-grid"></div>
-          <div class="map-border"></div>
-          <div class="map-content">
-            <div class="map-pin"></div>
-            <div class="map-lbl">
-              <strong>Godown No. 8</strong>
-              <span>APMC New Cotton Market, Dholka</span>
-            </div>
-            <a href="https://maps.google.com/?q=APMC+New+Cotton+Market+Dholka+Gujarat" target="_blank" class="map-btn">Open in Maps →</a>
-          </div>
+        <div class="map-box"><div class="map-bg"></div><div class="map-grid"></div><div class="map-border"></div>
+          <div class="map-content"><div class="map-pin"></div><div class="map-lbl"><strong>Godown No. 8</strong><span>APMC New Cotton Market, Dholka</span></div><a href="https://maps.google.com/?q=APMC+New+Cotton+Market+Dholka+Gujarat" target="_blank" class="map-btn">Open in Maps &rarr;</a></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ══ QUOTE BAND ══ -->
-<div class="quote-band">
-  <div class="qbg"></div>
-  <div class="qbg-ov"></div>
-  <div class="container">
-    <div class="qinner reveal">
-      <span class="qmark">"</span>
-      <p class="qtext">In agriculture, trust is not just a virtue — it is the foundation of every transaction. At Krishi Global Industries, we trade not merely in commodities, but in relationships built on integrity, transparency, and the enduring promise of quality.</p>
-      <div class="qattr">Krishi Global Industries · APMC New Cotton Market, Dholka</div>
-    </div>
-  </div>
+<div class="quote-band"><div class="qbg"></div><div class="qbg-ov"></div>
+  <div class="container"><div class="qinner reveal"><span class="qmark">"</span><p class="qtext">In agriculture, trust is not just a virtue &mdash; it is the foundation of every transaction. At Krishi Global Industries, we trade not merely in commodities, but in relationships built on integrity, transparency, and the enduring promise of quality.</p><div class="qattr">Krishi Global Industries &nbsp;&middot;&nbsp; APMC New Cotton Market, Dholka</div></div></div>
 </div>
-
-<!-- ══ LEGAL ══ -->
 <section class="legal" id="legal">
   <div class="container">
-    <div class="reveal" style="margin-bottom:52px;">
-      <div class="eyebrow">Compliance</div>
-      <h2 class="sec-title">Registration <em>&amp; Compliance</em><br>Details</h2>
-    </div>
+    <div class="reveal" style="margin-bottom:52px;"><div class="eyebrow">Compliance</div><h2 class="sec-title">Registration <em>&amp; Compliance</em><br>Details</h2></div>
     <div class="legal-grid">
       <div class="leg-item reveal"><div class="leg-corner"></div><div class="leg-lbl">GSTIN</div><div class="leg-val">24DKJPS3119C1ZC</div></div>
       <div class="leg-item reveal rd1"><div class="leg-corner"></div><div class="leg-lbl">PAN Number</div><div class="leg-val">DKJPS3119C</div></div>
       <div class="leg-item reveal rd1"><div class="leg-corner"></div><div class="leg-lbl">Place of Supply</div><div class="leg-val">Gujarat</div></div>
-      <div class="leg-item reveal rd2"><div class="leg-corner"></div><div class="leg-lbl">Business Category</div><div class="leg-val">Agricultural Trade &amp; Storage</div></div>
+      <div class="leg-item reveal rd2"><div class="leg-corner"></div><div class="leg-lbl">Business Category</div><div class="leg-val">Agricultural Trade &amp; Export</div></div>
     </div>
   </div>
 </section>
-
-<!-- ══ CONTACT ══ -->
 <section class="contact" id="contact">
   <div class="container">
     <div class="contact-wrap">
       <div class="cl reveal">
         <div class="eyebrow">Contact</div>
         <h2 class="sec-title">Let's Begin a<br><em>Conversation</em></h2>
-        <p>Whether you're exploring storage solutions, seeking a reliable commodity trade partner, or looking to establish a long-term business relationship — we are ready to listen and respond with clarity and speed.</p>
+        <p>Whether you're looking to import high-quality Indian agricultural products, explore storage solutions, or establish a long-term export partnership &mdash; we are ready to respond with clarity and speed.</p>
         <div class="c-rows">
-          <div class="c-row">
-            <div class="c-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C9A84C" stroke-width="1.4"><path d="M3 5C3 4 4 3 5 3h2.5l1 3.5-1.5 1.5a11 11 0 005 5L13.5 11.5 17 12.5V15c0 1-1 2-2 2C7 17 3 10 3 5Z"/></svg></div>
-            <div>
-              <div class="crl">Phone / WhatsApp</div>
-              <div class="crv"><a href="tel:+919510545972" style="color:inherit;text-decoration:none;">+91 95105 45972</a></div>
-              <div class="crs">Available for calls, WhatsApp enquiries &amp; trade discussions</div>
-            </div>
-          </div>
-          <div class="c-row">
-            <div class="c-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C9A84C" stroke-width="1.4"><path d="M10 11C10 11 6 7.5 6 5a4 4 0 118 0c0 2.5-4 6-4 6Z"/><circle cx="10" cy="5" r="1.5"/><path d="M5 14C3 14.5 2 15.5 2 16.5S3 18 10 18s8-1 8-1.5-1-2-3-2.5"/></svg></div>
-            <div>
-              <div class="crl">Godown Address</div>
-              <div class="crv">Godown No. 8, APMC New Cotton Market</div>
-              <div class="crs">Near Ambika Circle, Dholka, Gujarat</div>
-            </div>
-          </div>
-          <div class="c-row">
-            <div class="c-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C9A84C" stroke-width="1.4"><rect x="2" y="2" width="16" height="16" rx="1"/><path d="M2 7h16"/><path d="M7 2v5"/><path d="M13 2v5"/></svg></div>
-            <div>
-              <div class="crl">Entity &amp; Registration</div>
-              <div class="crv">Krishi Global Industries</div>
-              <div class="crs">GSTIN: 24DKJPS3119C1ZC · PAN: DKJPS3119C</div>
-            </div>
-          </div>
+          <div class="c-row"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C9A84C" stroke-width="1.4"><path d="M3 5C3 4 4 3 5 3h2.5l1 3.5-1.5 1.5a11 11 0 005 5L13.5 11.5 17 12.5V15c0 1-1 2-2 2C7 17 3 10 3 5Z"/></svg></div><div><div class="crl">Phone / WhatsApp</div><div class="crv"><a href="tel:+919510545972" style="color:inherit;text-decoration:none;">+91 95105 45972</a></div><div class="crs">Available for calls, WhatsApp enquiries &amp; export discussions</div></div></div>
+          <div class="c-row"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C9A84C" stroke-width="1.4"><path d="M10 11C10 11 6 7.5 6 5a4 4 0 118 0c0 2.5-4 6-4 6Z"/><circle cx="10" cy="5" r="1.5"/><path d="M5 14C3 14.5 2 15.5 2 16.5S3 18 10 18s8-1 8-1.5-1-2-3-2.5"/></svg></div><div><div class="crl">Godown Address</div><div class="crv">Godown No. 8, APMC New Cotton Market</div><div class="crs">Near Ambika Circle, Dholka, Gujarat</div></div></div>
+          <div class="c-row"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#C9A84C" stroke-width="1.4"><rect x="2" y="2" width="16" height="16" rx="1"/><path d="M2 7h16"/><path d="M7 2v5"/><path d="M13 2v5"/></svg></div><div><div class="crl">Entity &amp; Registration</div><div class="crv">Krishi Global Industries</div><div class="crs">GSTIN: 24DKJPS3119C1ZC &nbsp;&middot;&nbsp; PAN: DKJPS3119C</div></div></div>
         </div>
       </div>
       <div class="cr reveal rd2">
         <h3>Send an Enquiry</h3>
         <p>Fill in your details and we'll respond within 24 hours.</p>
-        <div class="fg2">
-          <div class="fg"><input type="text" placeholder="Your Name"/></div>
-          <div class="fg"><input type="tel" placeholder="Phone Number"/></div>
-        </div>
+        <div class="fg2"><div class="fg"><input type="text" placeholder="Your Name"/></div><div class="fg"><input type="tel" placeholder="Phone Number"/></div></div>
         <div class="fg"><input type="text" placeholder="Company / Business Name"/></div>
-        <div class="fg"><input type="text" placeholder="Purpose — Storage / Trade / Partnership"/></div>
-        <div class="fg"><textarea rows="4" placeholder="Describe your requirement — commodity type, quantity, duration..."></textarea></div>
-        <button class="fsub" onclick="submitForm(this)">Submit Enquiry →</button>
+        <div class="fg"><input type="text" placeholder="Country / Destination"/></div>
+        <div class="fg"><textarea rows="4" placeholder="Describe your requirement &mdash; product, quantity, packaging preference..."></textarea></div>
+        <button class="fsub" onclick="submitForm(this)">Submit Enquiry &rarr;</button>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ══ FOOTER ══ -->
 <footer>
   <div class="finr">
     <div>
-      <svg width="42" height="42" viewBox="0 0 42 42" fill="none"><circle cx="21" cy="21" r="20" stroke="#C9A84C" stroke-width=".8"/><path d="M21 32L21 11" stroke="#C9A84C" stroke-width="1.1"/><path d="M21 24Q16.5 20 18 14Q21 19 21 24Z" fill="#C9A84C" opacity=".9"/><path d="M21 24Q25.5 20 24 14Q21 19 21 24Z" fill="#C9A84C" opacity=".9"/><path d="M21 18Q16 14.5 17.5 9Q21 14 21 18Z" fill="#C9A84C" opacity=".5"/><path d="M21 18Q26 14.5 24.5 9Q21 14 21 18Z" fill="#C9A84C" opacity=".5"/></svg>
+      <img class="flogo" src="Logo.png" alt="Krishi Global Logo"/>
       <div class="fbn">Krishi <em>Global</em> Industries</div>
-      <p class="fbt">A Gujarat-based agricultural trade and storage company operating from APMC New Cotton Market, Dholka — committed to quality, compliance, and enduring commerce.</p>
+      <p class="fbt">A Gujarat-based agricultural export company sourcing premium coriander seeds, dried chillies, and rice directly from Indian farms &mdash; delivering globally with integrity and quality.</p>
     </div>
-    <div class="fcol">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#property">Our Premises</a></li>
-        <li><a href="#legal">Compliance</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="fcol">
-      <h4>Reach Us</h4>
-      <ul>
-        <li><a href="tel:+919510545972">+91 95105 45972</a></li>
-        <li><a href="#">Godown No. 8, APMC</a></li>
-        <li><a href="#">New Cotton Market</a></li>
-        <li><a href="#">Near Ambika Circle</a></li>
-        <li><a href="#">Dholka, Gujarat</a></li>
-      </ul>
-    </div>
+    <div class="fcol"><h4>Navigation</h4><ul><li><a href="#about">About Us</a></li><li><a href="#products">Products</a></li><li><a href="#services">Services</a></li><li><a href="#property">Our Premises</a></li><li><a href="#legal">Compliance</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div class="fcol"><h4>Reach Us</h4><ul><li><a href="tel:+919510545972">+91 95105 45972</a></li><li><a href="#">Godown No. 8, APMC</a></li><li><a href="#">New Cotton Market</a></li><li><a href="#">Near Ambika Circle</a></li><li><a href="#">Dholka, Gujarat</a></li></ul></div>
   </div>
   <div class="fbot">
-    <div class="fbl">© 2025 <span>Krishi Global Industries</span> · All Rights Reserved</div>
-    <div class="fbr">GSTIN: 24DKJPS3119C1ZC &nbsp;·&nbsp; PAN: DKJPS3119C</div>
+    <div class="fbl">&#169; 2025 <span>Krishi Global Industries</span> &nbsp;&middot;&nbsp; All Rights Reserved</div>
+    <div class="fbr">GSTIN: 24DKJPS3119C1ZC &nbsp;&middot;&nbsp; PAN: DKJPS3119C</div>
   </div>
 </footer>
-
 <script>
-// ── NAVBAR ──
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
-function openMenu()  { document.getElementById('mobMenu').classList.add('open'); document.body.style.overflow='hidden'; }
-function closeMenu() { document.getElementById('mobMenu').classList.remove('open'); document.body.style.overflow=''; }
-
-// ── HERO SLIDESHOW ──
-const slides  = document.querySelectorAll('.hslide');
-const dots    = document.querySelectorAll('.hdot');
-const curEl   = document.getElementById('hcur');
-const progEl  = document.getElementById('hpf');
-let cur = 0, tid;
-const DUR = 6400;
-
-function goSlide(n) {
-  slides[cur].classList.remove('active');
-  slides[cur].classList.add('leaving');
-  dots[cur].classList.remove('on');
-  const prev = cur;
-  setTimeout(() => slides[prev].classList.remove('leaving'), 2000);
-  cur = n;
-  slides[cur].classList.add('active');
-  dots[cur].classList.add('on');
-  curEl.textContent = String(cur+1).padStart(2,'0');
-  resetProg();
-}
-function nextSlide() { goSlide((cur+1) % slides.length); }
-function resetProg() {
-  progEl.style.transition = 'none';
-  progEl.style.width = '0%';
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    progEl.style.transition = `width ${DUR}ms linear`;
-    progEl.style.width = '100%';
-  }));
-  clearInterval(tid);
-  tid = setInterval(nextSlide, DUR);
-}
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>50));
+function openMenu(){document.getElementById('mobMenu').classList.add('open');document.body.style.overflow='hidden';}
+function closeMenu(){document.getElementById('mobMenu').classList.remove('open');document.body.style.overflow='';}
+const slides=document.querySelectorAll('.hslide'),dots=document.querySelectorAll('.hdot'),curEl=document.getElementById('hcur'),progEl=document.getElementById('hpf');
+let cur=0,tid;const DUR=6400;
+function goSlide(n){slides[cur].classList.remove('active');slides[cur].classList.add('leaving');dots[cur].classList.remove('on');const prev=cur;setTimeout(()=>slides[prev].classList.remove('leaving'),2000);cur=n;slides[cur].classList.add('active');dots[cur].classList.add('on');curEl.textContent=String(cur+1).padStart(2,'0');resetProg();}
+function nextSlide(){goSlide((cur+1)%slides.length);}
+function resetProg(){progEl.style.transition='none';progEl.style.width='0%';requestAnimationFrame(()=>requestAnimationFrame(()=>{progEl.style.transition='width '+DUR+'ms linear';progEl.style.width='100%';}));clearInterval(tid);tid=setInterval(nextSlide,DUR);}
 resetProg();
-
-// ── SCROLL REVEAL ──
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-}, { threshold: 0.08 });
-document.querySelectorAll('.reveal').forEach(r => io.observe(r));
-
-// ── ACTIVE NAV ──
-const secs  = document.querySelectorAll('section[id]');
-const links = document.querySelectorAll('.nav-links a');
-window.addEventListener('scroll', () => {
-  let c = '';
-  secs.forEach(s => { if (window.scrollY >= s.offsetTop - 140) c = s.id; });
-  links.forEach(a => { a.style.color = a.getAttribute('href') === '#'+c ? 'var(--gold-light)' : ''; });
-});
-
-// ── FORM ──
-function submitForm(btn) {
-  const orig = btn.textContent;
-  btn.textContent = '✓ Enquiry Received';
-  btn.style.background = 'var(--green-mid)'; btn.style.color = '#fff';
-  setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.style.color = ''; }, 3000);
-}
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+const secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{let c='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-140)c=s.id;});links.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+c?'var(--gold-light)':'';});});
+function submitForm(btn){const orig=btn.textContent;btn.textContent='✓ Enquiry Received';btn.style.background='var(--green-mid)';btn.style.color='#fff';setTimeout(()=>{btn.textContent=orig;btn.style.background='';btn.style.color='';},3000);}
 </script>
 </body>
 </html>
