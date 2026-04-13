@@ -86,10 +86,11 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .sdot{width:1px;height:34px;background:linear-gradient(to bottom,var(--gold),transparent);animation:sPulse 2s infinite;}
 .stats-bar{background:var(--gold);padding:0 24px;}
 .stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid rgba(26,58,42,.14);}
-.stat-item{padding:32px 36px;border-right:1px solid rgba(26,58,42,.14);text-align:center;cursor:default;transition:background .3s;}
+.stat-item{padding:30px 28px;border-right:1px solid rgba(26,58,42,.14);text-align:left;cursor:default;transition:background .3s;}
 .stat-item:hover{background:rgba(26,58,42,.09);}
-.snum{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:700;color:var(--green-deep);line-height:1;}
-.slbl{font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(26,58,42,.58);margin-top:5px;}
+.snum{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--green-deep);line-height:1;margin-bottom:6px;}
+.slbl-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--green-deep);line-height:1.2;margin-bottom:6px;}
+.slbl{font-size:12px;letter-spacing:.3px;text-transform:none;color:rgba(26,58,42,.55);margin-top:0;line-height:1.5;font-weight:300;}
 .marquee{background:var(--green-mid);padding:16px 0;overflow:hidden;}
 .mtrack{display:flex;white-space:nowrap;animation:marq 24s linear infinite;}
 .mitem{display:inline-flex;align-items:center;gap:28px;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.48);padding:0 28px;flex-shrink:0;}
@@ -358,10 +359,10 @@ footer{background:var(--ink);padding:56px 24px 28px;}
 </section>
 <div class="stats-bar">
   <div class="stats-inner">
-    <div class="stat-item reveal"><div class="snum">No. 8</div><div class="slbl">Godown Number</div></div>
-    <div class="stat-item reveal rd1"><div class="snum">APMC</div><div class="slbl">Market Registered</div></div>
-    <div class="stat-item reveal rd2"><div class="snum">GST</div><div class="slbl">Fully Compliant</div></div>
-    <div class="stat-item reveal rd3"><div class="snum">GJ</div><div class="slbl">Gujarat Operations</div></div>
+    <div class="stat-item reveal"><div class="snum">01.</div><div class="slbl-title">APMC Registered</div><div class="slbl">Authorized and verified under agricultural market regulations</div></div>
+    <div class="stat-item reveal rd1"><div class="snum">02.</div><div class="slbl-title">FSSAI &amp; Quality Certified</div><div class="slbl">Ensuring food safety and export-grade standards</div></div>
+    <div class="stat-item reveal rd2"><div class="snum">03.</div><div class="slbl-title">Global Export Network</div><div class="slbl">Supplying products to multiple countries worldwide</div></div>
+    <div class="stat-item reveal rd3"><div class="snum">04.</div><div class="slbl-title">Premium Quality Assurance</div><div class="slbl">Strict quality checks from sourcing to packaging</div></div>
   </div>
 </div>
 <div class="marquee">
